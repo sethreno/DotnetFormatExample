@@ -1,0 +1,22 @@
+{
+   "tasks": [
+      {
+         "name": "format style",
+         "command": "dotnet",
+         "args": [ "format", "style", "--severity", "info", "--include", "${staged}" ],
+         "include": [ "**/*.cs" ]
+      },
+      {
+         "name": "format analyzers",
+         "command": "dotnet",
+         "args": [ "format", "analyzers", "--severity", "info", "--include", "${staged}" ],
+         "include": [ "**/*.cs" ]
+      },
+      {
+         "name": "csharpier",
+         "command": "dotnet",
+         "args": [ "dotnet-csharpier", "${staged}" ],
+         "include": [ "**/*.cs" ]
+      }
+   ]
+}
