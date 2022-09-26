@@ -4,6 +4,10 @@
 // 3. run git commit -v
 // 4. notice formatting get's corrected and staged
 
+// dotnet format will remove these usings
+using System.Reflection.Emit;
+using System.Diagnostics.CodeAnalysis;
+
 // dotnet format will change the following to var
 string a = "huh?";
 int b = 1;
