@@ -3,13 +3,13 @@
       {
          "name": "format style",
          "command": "dotnet",
-         "args": [ "format", "style", "--severity", "info", "--include", "${staged}" ],
+         "args": [ "format", "style", "-v", "d", "--severity", "info", "--include", "${staged}" ],
          "include": [ "**/*.cs" ]
       },
       {
          "name": "format analyzers",
          "command": "dotnet",
-         "args": [ "format", "analyzers", "--severity", "info", "--include", "${staged}" ],
+         "args": [ "format", "analyzers", "-v", "d", "--severity", "info", "--include", "${staged}" ],
          "include": [ "**/*.cs" ]
       },
       {
